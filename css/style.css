@@ -143,4 +143,10 @@ section#page02 .row .box-wrap .box-img {
   background-position: center;
 }
 
+section#page02 .row .box-wrap {
+  width: calc(100% - 300px);
+  height: calc(100% - 300px);
+  padding: 30px;
+}
+
 
