@@ -145,8 +145,6 @@ section#page02 .row .box-wrap .box-img {
 
 section#page02 .row .box-wrap {
   width: calc(100% - 50px);
-  height: calc(100% - 500px);
+  height: calc(100% - 50px);
   padding: 5px;
 }
-
-
