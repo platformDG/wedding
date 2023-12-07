@@ -144,9 +144,9 @@ section#page02 .row .box-wrap .box-img {
 }
 
 section#page02 .row .box-wrap {
-  width: calc(100% - 300px);
-  height: calc(100% - 300px);
-  padding: 30px;
+  width: calc(100% - 50px);
+  height: calc(100% - 500px);
+  padding: 5px;
 }
 
 
