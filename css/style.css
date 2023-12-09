@@ -126,3 +126,36 @@ section#page02 .row .box-wrap .box-img {
   background-position: center;
 }
 
+/*page04*/
+section#page04 .row .box-wrap .box{
+  width: 100%;
+  height: 100%;
+}
+
+section#page04 .row .slider-wrap{
+  /* width: 1515px; */
+  width: 90%;
+  height: 303px;
+  overflow: hidden;
+}
+section#page04 .row .slider-wrap .swiper-wrapper img{
+  /* display: block;
+  width: 100%;
+  height: auto; */
+  /* max-width: 100%; */
+  width: auto;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  content:'';
+}
+.swiper-button-next{
+  right: 30px;
+  top: calc( 50% + 100px );
+}
+.swiper-button-prev{
+  left: 30px;
+  top: calc( 50% + 100px );
+}

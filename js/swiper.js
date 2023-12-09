@@ -16,8 +16,8 @@ var swiper = new Swiper(".slider-container", {
 
 var bgswiper = new Swiper(".bg-container", {
   direction: "vertical",
-  slidesPerView: "auto",
-  // slidesPerView: 1,
+  //slidesPerView: "auto",
+  //slidesPerView: 1,
   spaceBetween: 0,
   mousewheel: true,
   speed : 1500,
@@ -27,11 +27,11 @@ var bgswiper = new Swiper(".bg-container", {
 var index = 5;
 
 var thumbswiper = new Swiper(".thumbSwiper", {
-  loop: true,
+  //loop: true,
   autoplay: {
     delay: 4000,
   },
-  slidesPerView: index,
+  slidesPerView: 1,
   spaceBetween: 0,
   navigation:{
     nextEl:'.swiper-button-next',
@@ -40,18 +40,18 @@ var thumbswiper = new Swiper(".thumbSwiper", {
   breakpoints: {
     // when window width is >= 320px
     320:{
-      slidesPerView: 2
+      slidesPerView: 1
     },
     1080: {
-      slidesPerView: 3
+      slidesPerView: 1
     },
     // when window width is >= 480px
     1400: {
-      slidesPerView: 4
+      slidesPerView: 1
     },
     // when window width is >= 640px
     1600: {
-      slidesPerView: 5
+      slidesPerView: 1
     }
   },
 });
