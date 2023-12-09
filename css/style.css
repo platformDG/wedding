@@ -86,8 +86,9 @@ section .row .box-wrap {
   background: yellow;
   border: 1px solid rgba(255,255,255,0.4);
   width: calc(100% - 50px);
-  height: calc(100% - 50px);
+  height: calc(100% - 120px);
   padding: 5px;
+  margin-top: 20px;
 }
 section .row .box-wrap .box{
   display: flex;
@@ -109,14 +110,10 @@ section#intro .row .box-wrap .box-img {
 
 section#page02 .row .box-wrap .box-img {
   display: block;
-  width: 90%;
-  height: 90%;
-  background: url('../img/main/calrenda.png') no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url('../img/page03/calrenda2.png') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-section#page02 .row .box-wrap {
-  width: calc(100% - 50px);
-  height: calc(100% - 50px);
-}
