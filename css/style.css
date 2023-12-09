@@ -85,7 +85,7 @@ section .row .box-wrap {
   flex-direction: column;
   background: yellow;
   border: 1px solid rgba(255,255,255,0.4);
-  width: calc(100% - 50px);
+  width: calc(100% - 10px);
   height: calc(100% - 120px);
   padding: 5px;
   margin-top: 20px;
@@ -95,9 +95,9 @@ section .row .box-wrap .box{
   justify-content:center;
   align-items: center;
   flex-direction: column;
-  /*background: red;*/
+  background: red;
   width: 100%;
-  height: 20%;
+  height: 10%;
 }
 section#intro .row .box-wrap .box-img {
   display: block;
