@@ -91,6 +91,7 @@ section .row .box-wrap {
   width: calc(100% - 20px);
   height: calc(100% - 230px);
   padding: 5px;
+  margin-bottom: 50px;
 }
 section .row .box-wrap .box{
   display: flex;
