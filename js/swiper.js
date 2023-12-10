@@ -1,23 +1,7 @@
-var swiper = new Swiper(".slider-container", {
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<img src="./img/intro/mv-roll.png" alt="mv-roll" class="'+className+'">'
-      // return '<span class="' + className + '">' + (index + 1) + "</span>";
-    }
-  },
-  speed : 1500
-});
-
 var bgswiper = new Swiper(".bg-container", {
   direction: "vertical",
   //slidesPerView: "auto",
-  //slidesPerView: 1,
+  slidesPerView: 1,
   spaceBetween: 0,
   mousewheel: true,
   speed : 1500,
