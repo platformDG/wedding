@@ -1,14 +1,11 @@
 var bgswiper = new Swiper(".bg-container", {
   direction: "vertical",
   //slidesPerView: "auto",
-  slidesPerView: 1,
+  //slidesPerView: 1,
   spaceBetween: 0,
   mousewheel: true,
   speed : 1500,
 });
-
-//리사이즈 될때 확인하기
-var index = 5;
 
 var thumbswiper = new Swiper(".thumbSwiper", {
   //loop: true,
