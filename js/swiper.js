@@ -8,12 +8,13 @@ var bgswiper = new Swiper(".bg-container", {
 });
 
 var thumbswiper = new Swiper(".thumbSwiper", {
-  //loop: true,
-  autoplay: {
-    delay: 4000,
-  },
+  loop: true,
+  slidesPerView: "auto",
+  //autoplay: {
+  // delay: 4000,
+  //},
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 30,
   navigation:{
     nextEl:'.swiper-button-next',
     prevEl:'.swiper-button-prev',
@@ -36,3 +37,7 @@ var thumbswiper = new Swiper(".thumbSwiper", {
     }
   },
 });
+
+function goToSlide(slideIndex) {
+  bgswiper.slideTo(slideIndex, 2500, true); // slideIndex는 1부터 시작합니다.
+}

@@ -3,6 +3,7 @@ $(function() {
   mouseEventFunc();
 
   // 처음 로드가 되면 윈도우 사이즈를 파악 후에 마우스이벤트 함수를 on/off를 결정한다.
+  /*
   var winWidth = $(window).width();
   if(winWidth >= 1600){
     mouseEventFunc();
@@ -23,7 +24,7 @@ $(function() {
       offFunc();
     }
   });
-/*
+
   function onFunc(){
     $("#header").bind("mouseenter");
     $(".topmenu").bind("mouseenter");
