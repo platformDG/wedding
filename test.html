@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation Account Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown-content {
+            display: none;
+        }
+        .dropdown-content.show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto p-4">
+        <div class="text-center my-6">
+            <h1 class="text-2xl font-semibold">참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.</h1>
+            <p class="text-lg mt-2">너그러운 마음으로 양해 부탁드립니다.</p>
+        </div>
+
+        <div class="my-4">
+            <div class="flex justify-between items-center border-b-2 border-gray-200 pb-2">
+                <h2 class="text-xl font-semibold">신랑측 계좌번호</h2>
+                <button onclick="toggleDropdown('groom-accounts')" class="text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="groom-arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="dropdown-content" id="groom-accounts">
+                <div class="flex justify-between items-center mt-4">
+                    <div>
+                        <p class="font-semibold">국민은행 000-00-000</p>
+                        <p>박동근</p>
+                    </div>
+                    <div>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded mr-2">pay</button>
+                        <button class="bg-gray-300 px-4 py-2 rounded">복사</button>
+                    </div>
+                </div>
+                <!-- Repeat for each account as needed -->
+            </div>
+        </div>
+
+        <div class="my-4 text-center">
+            <button class="bg-yellow-300 px-6 py-3 rounded-full font-semibold">카카오톡 공유하기</button>
+        </div>
+
+        <footer class="text-center my-6">
+            <p class="text-sm">&copy; 신랑 IT 업무하는 사람이 직접 만들어보고 싶었습니다.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            var arrow = document.getElementById('groom-arrow');
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                arrow.classList.remove('rotate-180');
+            } else {
+                content.classList.add('show');
+                arrow.classList.add('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
