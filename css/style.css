@@ -48,6 +48,7 @@ a { text-decoration: none; color:#000;}
   border-radius: 8vw;
   padding: 2.13vw 3.46vw;
 }
+
 /* header */
 #header{
   position: fixed;
@@ -136,34 +137,41 @@ section#intro .row .box-wrap .box-img {
 }
 
 /* #page01 */
+/*
 section#page01 .row{
   background: url('../img/page01/back2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-}
+}*/
 section#page01 .row .box-wrap .box{
   width: 100%;
-  height: 20%;
+  height: 100%;
 }
-section#page01 .row .box-wrap .box:last-child {
+section#page01 .row .box-wrap .box:nth-child(4){
+  margin-top: 30px;
+}
+section#page01 .row .box-wrap .box:nth-child(5){
+  margin-bottom: 30px;
+}
+ section#page01 .row .box-wrap .box.name-box{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-}
-section#page01 .row .box-wrap .box:last-child .tel-box {
+  height: 30px;
+} 
+ section#page01 .row .box-wrap .box.tel-total {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   height: 100%;
 }
-section#page01 .row .box-wrap .box:last-child .tel-box .icon-box{
+/* section#page01 .row .box-wrap .box:last-child .tel-box .icon-box{
   margin-bottom: 30px;
-}
+} */
 
 /* #page02 */
 section#page02 .row .box-wrap .box-img {
