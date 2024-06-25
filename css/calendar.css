@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+.calendar-box {
+    font-family: 'Gowun Dodum', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.calendar-container {
+    text-align: center;
+}
+
+.date-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#calendar div {
+    padding: 10px 0;
+}
+
+#calendar .header {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#calendar .header.sun {
+    color: #f15353;
+}
+
+#calendar .day {
+    position: relative;
+}
+
+#calendar .day.special {
+    background-color: #f15353; /* 주황색 배경 */
+    color: #ffffff; /* 흰색 글자 */
+    border-radius: 50%;
+}
+
+#countdown {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#time-left {
+    font-size: 1.2em;
+    font-weight: bold;
+}
